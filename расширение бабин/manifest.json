@@ -1,0 +1,16 @@
+{
+    "name": "симулятор решения задач с бабиным",
+    "description": "и виталей",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action" : {
+        "default_popup": "popup.html",
+        "default_icon" : "/assets/imgs/почти бабин.png",
+        "icons": "почти бабин.png"
+    },
+    "content_scripts": [{
+        "matches" : ["http://acmp.ru/*", "https://acmp.ru/*", "https://acmp.c.ru/"],
+        "js" : ["babin.js"]
+    }]
+}
